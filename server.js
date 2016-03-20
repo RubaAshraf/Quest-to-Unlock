@@ -15,7 +15,6 @@ app.use(bodyParser.json());
 var port = process.env.PORT || 3000;
 var router = express.Router(); 
 
-//bla bla
 mongoose.Promise = Promise;
  
 
