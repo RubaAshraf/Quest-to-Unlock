@@ -14,14 +14,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 var port = process.env.PORT || 3000;
 var router = express.Router(); 
-
+//ruba ruba
 mongoose.Promise = Promise;
  
 
 router.use(function(req, res, next) {
     // do logging
     console.log('Something is happening.');
-    next(); // make sure we go to the next routes and don't stop here
+    next(); // make sure we go to the next routes a don't stop here
 });
 
 
