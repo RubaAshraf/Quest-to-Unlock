@@ -6,6 +6,8 @@ var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
 var expressSession = require('express-session');
 var router = express.Router(); 
+var Promise = require('bluebird');
+//mongoose.Promise = Promise;
 // Configuring Passport
 /*var passport = require('passport');
 app.use(cookieParser());
@@ -42,10 +44,15 @@ app.use(bodyParser.json());
 
  var gameRoutes = require('./routes/games');//(passport);
  app.use('/game', UserRoutes);
+ var PlayerRoutes = require('./routes/player');//(passport);
+ app.use('/game', PlayerRoutes);
+
 
 
  var MetricRoutes = require('./routes/metric');//(passport);
  app.use('/game', MetricRoutes);
+
+
 
 
 

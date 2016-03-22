@@ -4,7 +4,7 @@ var jsonParser = bodyParser.json();
 var router = express.Router();
 var User = require('../models/user');
 var Game= require ('../models/game');
-var Metric= require ('../models/Metric');
+var Metric= require ('../models/metric');
 
 
 
