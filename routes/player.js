@@ -3,7 +3,12 @@ var bodyParser = require('body-parser')
 var jsonParser = bodyParser.json();
 var router = express.Router();
 var User = require('../models/user');
+var Promise = require('bluebird');
+//mongoose.Promise = Promise;
 var Player = require('../models/player');
+var playerMetric = require('../models/playerMetric');
+var Metric = require('../models/metric');
+console.log('ruba');
 
  router.route('/:game_id/player')
 
@@ -93,3 +98,4 @@ router.route('/:game_id/player/:player_id')
             res.json(user);
         });
     });
+module.exports=router;
